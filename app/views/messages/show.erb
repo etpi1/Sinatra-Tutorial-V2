@@ -1,11 +1,13 @@
-<h1><%= @message.title %></h1>
+<h1> Author: <%= @message.author %> </h1>
+
 
 <p>
-  Author: <%= @message.author %>
+  <%= @message.content %>
+  <a href="<%= @message.url %>"><%= @message.url %></a>
 </p>
 
 <p>
-  <%= @message.content  %>
+  Message created at:<%= @message.created_at %>
 </p>
 
 <hr/>
